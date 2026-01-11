@@ -3,14 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cf:preview": "yarn build && vite preview",
-    "deploy": "yarn build && wrangler deploy"
+    "cf:preview": "npm run build && vite preview",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "react": "^19.2.0",
